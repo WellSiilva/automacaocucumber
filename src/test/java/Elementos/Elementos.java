@@ -6,6 +6,7 @@ public class Elementos {
 
 	private By btnAbrirConta = By.cssSelector(
 			"body > div.viewport-primary > nav.nav-desktop > div.right > div.nav-item.nav-item-nova-conta > a");
+	private By btnPopUp = By.id("onetrust-accept-btn-handler");
 	private By btnParaVoce = By.id("bt1");
 	private By campoNome = By.id("nome");
 	private By campoTelefone = By.id("telefone");
@@ -44,5 +45,13 @@ public class Elementos {
 
 	public By getBtnParaVoce() {
 		return btnParaVoce;
+	}
+
+	public By getBtnPopUp() {
+		return btnPopUp;
+	}
+
+	public void setBtnPopUp(By btnPopUp) {
+		this.btnPopUp = btnPopUp;
 	}
 }
